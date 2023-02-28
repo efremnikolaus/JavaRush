@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class Solution {
+public class SolutionOne {
 
     public static final String PROMPT_STRING = "Введите номер студента, или exit для выхода: ";
     public static final String EXIT = "exit";
