@@ -1,7 +1,7 @@
 import java.io.FileNotFoundException;
 import java.nio.file.FileSystemException;
 
-public class Solution {
+public class Main {
 
     public static final String FAILED_TO_READ = "Не удалось прочесть файл.";
     public static final String FAILED_TO_WRITE = "Не удалось записать в файл.";

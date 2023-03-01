@@ -1,5 +1,4 @@
 public class Lion {
-
     public void eat(Food food) {
         try {
             System.out.println();
