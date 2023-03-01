@@ -1,11 +1,3 @@
-public class SolutionTwo {
-
-    public static void main(String[] args) {
-        Lion lion = new Lion();
-        lion.eat(new Food("мясо"));
-        lion.eat(null);
-    }
-}
 public class Lion {
 
     public void eat(Food food) {
@@ -20,13 +12,5 @@ public class Lion {
         } finally {
             System.out.println("лег спать" + (food == null ? " голодным" : ""));
         }
-    }
-}
-public class Food {
-
-    String name;
-
-    public Food(String name) {
-        this.name = name;
     }
 }
