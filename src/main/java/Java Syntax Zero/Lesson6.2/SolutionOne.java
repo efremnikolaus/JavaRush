@@ -3,7 +3,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-public class Solution {
+public class SolutionOne {
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in);
