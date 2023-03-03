@@ -3,7 +3,8 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Scanner;
 
-public class SolutionOne {
+public class SolutionTwo {
+
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in);
              var inputStream = Files.newInputStream(Paths.get(scanner.nextLine()));
