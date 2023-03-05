@@ -3,12 +3,12 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/example/Java Syntax Zero/Lesson5.4" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/example/Java Syntax Zero/Lesson5.5" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/example/Java Syntax Zero/Lesson5.6" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/example/Java Syntax Zero/Lesson5.8" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/example/Java Syntax Zero/Lesson6.1" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/example/Java Syntax Zero/Lesson6.2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/exampl3/JavaSyntaxZer0/Lesson5.4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/exampl3/JavaSyntaxZer0/Lesson5.5" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/exampl3/JavaSyntaxZer0/Lesson5.6" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/exampl3/JavaSyntaxZer0/Lesson5.8" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/exampl3/JavaSyntaxZer0/Lesson6.1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/java/src/main/java/org/exampl3/JavaSyntaxZer0/Lesson6.2" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
