@@ -1,17 +1,28 @@
 package org.exampl3.JavaSyntaxZer0.Lesson6_4;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.io.PrintStream;
+import java.util.Scanner;
 
 public class SixSolutionFourFour {
-    public static void main(String[] args) {
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        try (PrintStream stream = new PrintStream(baos)) {
-            stream.println("Hello");
-            stream.println(123);
-        }
+    public static ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+    public static PrintStream stream = new PrintStream(outputStream);
 
-        String result = baos.toString();
-        System.out.println(result);
+    public static void main(String[] args) throws IOException {
+        Scanner scanner = new Scanner(System.in);
+        printSomething(scanner.nextLine());
+        String result = outputStream.toString();
+        outputStream.reset();
+        StringBuilder stringBuilder = new StringBuilder(result);
+        String reverse = stringBuilder
+                .reverse()
+                .toString();
+        printSomething(reverse);
+        System.out.println(outputStream);
+    }
+
+    public static void printSomething(String str) {
+        stream.print(str);
     }
 }
