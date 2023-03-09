@@ -5,6 +5,8 @@ import java.io.File;
 public class SixSolutionOneFive {
     public static void main(String[] args) {
         File file = new File("C:\\file.txt");
-        File folder = file.getParentFile();
+        if(!file.exists()){
+            file.mkdir();
+        }
     }
 }
