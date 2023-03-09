@@ -4,6 +4,7 @@ import java.io.File;
 
 public class SixSolutionOneFive {
     public static void main(String[] args) {
-        System.out.println(new File("C:\\file.txt").isDirectory());
+        File file = new File("C:\\file.txt");
+        File[] filesInCDrive = file.listFiles();
     }
 }
