@@ -5,6 +5,6 @@ import java.io.File;
 public class SixSolutionOneFive {
     public static void main(String[] args) {
         File file = new File("C:\\file.txt");
-        File[] filesInCDrive = file.listFiles();
+        File folder = file.getParentFile();
     }
 }
