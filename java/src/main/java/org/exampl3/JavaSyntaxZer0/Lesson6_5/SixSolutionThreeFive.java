@@ -1,4 +1,16 @@
 package org.exampl3.JavaSyntaxZer0.Lesson6_5;
 
+import java.util.Scanner;
+import java.nio.file.Path;
+
 public class SixSolutionThreeFive {
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        if(Path.of(str).isAbsolute()){
+            System.out.println(str);
+        }else{
+            System.out.println(Path.of(str).toAbsolutePath());
+        }
+    }
 }
