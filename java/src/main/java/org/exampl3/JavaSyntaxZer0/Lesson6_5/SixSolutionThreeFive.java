@@ -6,11 +6,12 @@ import java.nio.file.Path;
 public class SixSolutionThreeFive {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
-        if(Path.of(str).isAbsolute()){
-            System.out.println(str);
-        }else{
-            System.out.println(Path.of(str).toAbsolutePath());
+        String path = scanner.nextLine();
+        if(Path.of(path).isAbsolute()){
+            System.out.println(path);
+        }
+        else{
+            System.out.println(Path.of(path).toAbsolutePath());
         }
     }
 }
