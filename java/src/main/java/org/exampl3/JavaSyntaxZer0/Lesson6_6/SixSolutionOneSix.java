@@ -6,22 +6,16 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class SixSolutionOneSix {
-    private static final String THIS_IS_FILE = " - это файл";
-    private static final String THIS_IS_DIR = " - это директория";
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
         Scanner scanner = new Scanner(System.in);
-        while(true){
-            String str = scanner.nextLine();
-            if(str.isEmpty()){
-                break;
-            }
-            if(Files.isRegularFile(Path.of(str))){
-                System.out.println(str + THIS_IS_FILE);
-            }else if(Files.isDirectory(Path.of(str))){
-                System.out.println(str + THIS_IS_DIR);
-            } else {
-                break;
-            }
+        Path filePath = Path.of(scanner.nextLine());
+        Path fileNewPath = Path.of(scanner.nextLine());
+        if(Files.notExists(filePath)){
+            Files.createFile(fileNewPath);
+        } else if(Files.exists(filePath)){
+            Files.move(filePath, fileNewPath);
+        } else{
+            Files.delete(filePath);
         }
     }
 }
