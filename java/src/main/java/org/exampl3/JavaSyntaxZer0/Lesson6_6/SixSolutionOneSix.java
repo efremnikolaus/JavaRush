@@ -1,17 +1,27 @@
 package org.exampl3.JavaSyntaxZer0.Lesson6_6;
 
-import java.io.IOException;
+
+import java.util.Scanner;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Scanner;
-import java.util.List;
 
 public class SixSolutionOneSix {
-    public static void main(String[] args) throws IOException {
-        Path path = Path.of("c:\\readme.txt");
-        List<String> list = Files.readAllLines(path);
-        for(String str : list) {
-            System.out.println(str);
+    private static final String THIS_IS_FILE = " - это файл";
+    private static final String THIS_IS_DIR = " - это директория";
+    public static void main(String[] args){
+        Scanner scanner = new Scanner(System.in);
+        while(true){
+            String str = scanner.nextLine();
+            if(str.isEmpty()){
+                break;
+            }
+            if(Files.isRegularFile(Path.of(str))){
+                System.out.println(str + THIS_IS_FILE);
+            }else if(Files.isDirectory(Path.of(str))){
+                System.out.println(str + THIS_IS_DIR);
+            } else {
+                break;
+            }
         }
     }
 }
