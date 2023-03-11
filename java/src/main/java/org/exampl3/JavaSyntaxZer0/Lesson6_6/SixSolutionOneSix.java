@@ -1,12 +1,13 @@
 package org.exampl3.JavaSyntaxZer0.Lesson6_6;
 
 
+import java.io.IOException;
 import java.util.Scanner;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
 public class SixSolutionOneSix {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException {
         Scanner scanner = new Scanner(System.in);
         Path filePath = Path.of(scanner.nextLine());
         Path fileNewPath = Path.of(scanner.nextLine());
