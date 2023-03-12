@@ -1,5 +1,6 @@
 package org.exampl3.JavaSyntaxZer0.Lesson6_6;
 
+import java.io.IOException;
 import java.nio.file.DirectoryStream;
 import java.nio.file.Files;
 import java.util.Scanner;
@@ -20,6 +21,8 @@ public class SixSolutionTwoSix {
                     System.out.println(path.toString() + THIS_IS_DIR);
                 }
             }
+        } catch (IOException e){
+            System.out.println(e.getMessage());
         }
     }
 }
